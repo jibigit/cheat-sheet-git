@@ -180,5 +180,20 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 
 
+/* responsive */
+
+@media (max-width: 700px) {
+	#top-nav {
+		flex-wrap: wrap;   /* éléments flexibles disposés sur une ligne */
+	}
+
+	#top-nav .home {
+		flex: 0 0 35px;
+		overflow: hidden;
+		height: 35px;
+		padding-right: 15px;
+	}
+}
+
 
 
