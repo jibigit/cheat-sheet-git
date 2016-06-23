@@ -130,6 +130,24 @@ h6 {
 
 /*content*/
 
+.contenu,#contenu {
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 20px;
+}
+
+p {
+	margin: 1em 0;
+}
+
+a {
+	color: #009688;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
 
 
 
