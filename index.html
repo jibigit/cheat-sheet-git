@@ -49,11 +49,9 @@
 <!--part1: initialisation Git-->
 <h2 id="initialiser">Initialiser un nouveau dépot</h2>
 
-<p>Après avoir crée un nouveau répertoire sur votre ordinateur, vous devrez le lier avec un repository GitHub</p>
-
-<p >
-Pour cela, sur GitHub créez un nouveau repository. Tout de suite après la création, une liste de commandes à taper sur votre terminal s'affichera.</p>
-<p>Rendez vous sur votre terminal, déplacez vous dans le repertoire que vous avez crée précedemment sur votre ordinateur et suivez la marche à suivre indiquée par git hub</p>
+	<p>Après avoir crée un nouveau répertoire sur votre ordinateur, vous devrez le lier avec un repository GitHub</p>
+	<p>Pour cela, sur GitHub créez un nouveau repository. Tout de suite après la création, une liste de commandes à taper sur votre terminal s'affichera.</p>
+	<p>Rendez vous sur votre terminal, déplacez vous dans le repertoire que vous avez crée précedemment sur votre ordinateur et suivez la marche à suivre indiquée par git hub</p>
 
 <ul >
 	<li><a><code>echo "# nom ">>README.md</code></a></li>
@@ -64,8 +62,22 @@ Pour cela, sur GitHub créez un nouveau repository. Tout de suite après la cré
 	<li><a><code>git push -u origin master</code></a></li>
 </ul>
 
+<h2 id="versionner">Ajouter des fichiers et les versionner</h2>
+	<img src="index.png" alt="Etapes de GitHub" /></a>
+	<p>Vous pouvez proposer un changement (l'ajouter à l'Index) en exécutant les commandes</p>
+	<code>git add filename<code>
+
+	<p>C'est la première étape dans un workflow git basique. Pour valider ces changements, utilisez</p>
+	<code>git commit -m "Message de validation"<code>
+	p>Le fichier est donc ajouté au HEAD, mais pas encore dans votre dépôt distant.</p>		
+
+
+
+
+
 </div>    <!--close div contenu-->
 </div>    <!--close div contenu-->
+
 
 
 
