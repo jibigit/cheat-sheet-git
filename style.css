@@ -46,3 +46,54 @@ body {
 	font-size: 1em;
 	line-height: 1.4;
 }
+
+
+/* Top nav */
+#top-nav {
+	background: #009688;
+	color: white;
+	font-size: 1.2em;
+	min-height: 64px;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25)
+}
+
+#top-nav .home {
+	flex: 1;
+}
+
+#top-nav a {
+	color: inherit;
+}
+
+#top-nav > a {
+	padding: 10px;
+}
+
+/* end top nav*/
+
+img {
+	vertical-align: middle;
+	height: 120px;
+	width: 300px;
+}
+
+/* header style */
+
+.header {
+	margin: 50px auto 20px;
+	max-width: 1000px;
+	padding: 20px 20px 0;;
+
+}
+
+.header h1 {
+	margin-bottom: 70px;
+	padding-top: 10px;
+}
+
+/*end header style*/
+
+
