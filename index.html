@@ -68,10 +68,10 @@
 <h2 id="versionner">Ajouter des fichiers et les versionner</h2>
 	<img src="index.png" alt="Etapes de GitHub" /></a>
 	<p>Vous pouvez proposer un changement (l'ajouter à l'Index) en exécutant les commandes</p>
-	<code>git add filename<code>
+	<code>git add filename</code>
 
 	<p>C'est la première étape dans un workflow git basique. Pour valider ces changements, utilisez</p>
-	<code>git commit -m "Message de validation"<code>
+	<code>git commit -m "Message de validation"</code>
 	p>Le fichier est donc ajouté au HEAD, mais pas encore dans votre dépôt distant.</p>		
 <!--close part2-->
 
@@ -83,6 +83,34 @@
 
 <!--close part3-->
 
+<!--Open part4 / Branches-->
+
+<h2 id="branches">Les branches</h2>
+<p>
+On ne présente plus le navigateur Firefox, mais êtes-vous sûr d'en connaître tous les secrets ?</p>
+
+<p>Les branches sont utilisées pour développer des fonctionnalités isolées des autres. La branche master est la branche par défaut quand vous créez un dépôt. Utilisez les autres branches pour le développement et fusionnez ensuite à la branche principale quand vous avez fini.</p>
+
+<img src="branches.png" alt="Système de branches" /></a>
+
+<p>créer une nouvelle branche nommée "feature_x" et passer dessus pour l'utiliser</p>
+
+<code>git checkout -b feature_x</code>
+
+<p>retourner sur la branche principale</p>
+
+
+<code>git checkout master</code>
+
+<p>et supprimer la branche</p>
+
+<code>git branch -d feature_x</code>
+
+<p>une branche n'est pas disponible pour les autres tant que vous ne l'aurez pas envoyée vers votre dépôt distant</p>
+
+<code>git push origin feature_x</code>
+
+<!--Close part4: branches-->
 
 
 
