@@ -29,3 +29,20 @@
 	src: local("Roboto Black"), url("fonts/roboto/roboto-900.woff2") format("woff2");
 }
 
+
+/*Apply fonts, color on html & body */
+html,
+body {
+	font-family: Roboto, 'Trebuchet MS', arial, helvetica, sans-serif;
+	font-weight: 400;
+	background-color: #fafafa;
+	color: #212121;
+	padding: 0;
+	margin: 0;
+}
+
+/*Body size*/
+body {
+	font-size: 1em;
+	line-height: 1.4;
+}
