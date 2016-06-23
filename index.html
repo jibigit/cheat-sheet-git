@@ -46,7 +46,7 @@
 <div class="contenu">
 <div class="box">
 
-<!--part1: initialisation Git-->
+<!--Open part1: initialisation Git-->
 <h2 id="initialiser">Initialiser un nouveau dépot</h2>
 
 	<p>Après avoir crée un nouveau répertoire sur votre ordinateur, vous devrez le lier avec un repository GitHub</p>
@@ -61,9 +61,9 @@
 	<li><a><code>git remote add origin git@github.com:votreprofilGitHub/nomDuRepository</code></a></li>
 	<li><a><code>git push -u origin master</code></a></li>
 </ul>
-<!--Close part1-->
+<!--Close Close part1-->
 
-<!--part2: Add to index-->
+<!--Open part2: Add to index-->
 
 <h2 id="versionner">Ajouter des fichiers et les versionner</h2>
 	<img src="index.png" alt="Etapes de GitHub" /></a>
@@ -75,47 +75,74 @@
 	p>Le fichier est donc ajouté au HEAD, mais pas encore dans votre dépôt distant.</p>		
 <!--close part2-->
 
-<!--part3: Send changements-->
+<!--Open part3: Send changements-->
 
 <h2 id="changements">Envoyer des changements</h2>
-<p>Vos changements sont maintenant dans le HEAD de la copie de votre dépôt local. Pour les envoyer à votre dépôt distant, exécutez la commande</p>
-<code>git push origin master</code>
+	<p>Vos changements sont maintenant dans le HEAD de la copie de votre dépôt local. Pour les envoyer à votre dépôt distant, exécutez la commande</p>
+		<code>git push origin master</code>
 
 <!--close part3-->
+
 
 <!--Open part4 / Branches-->
 
 <h2 id="branches">Les branches</h2>
-<p>
-On ne présente plus le navigateur Firefox, mais êtes-vous sûr d'en connaître tous les secrets ?</p>
+	<p>On ne présente plus le navigateur Firefox, mais êtes-vous sûr d'en connaître tous les secrets ?</p>
 
-<p>Les branches sont utilisées pour développer des fonctionnalités isolées des autres. La branche master est la branche par défaut quand vous créez un dépôt. Utilisez les autres branches pour le développement et fusionnez ensuite à la branche principale quand vous avez fini.</p>
+	<p>Les branches sont utilisées pour développer des fonctionnalités isolées des autres. La branche master est la branche par défaut quand vous créez un dépôt. Utilisez les autres branches pour le développement et fusionnez ensuite à la branche principale quand vous avez fini.</p>
 
-<img src="branches.png" alt="Système de branches" /></a>
+	<img src="branches.png" alt="Système de branches" /></a>
 
-<p>créer une nouvelle branche nommée "feature_x" et passer dessus pour l'utiliser</p>
+	<p>créer une nouvelle branche nommée "feature_x" et passer dessus pour l'utiliser</p>
 
-<code>git checkout -b feature_x</code>
+		<code>git checkout -b feature_x</code>
 
-<p>retourner sur la branche principale</p>
+	<p>retourner sur la branche principale</p>
 
 
-<code>git checkout master</code>
+		<code>git checkout master</code>
 
-<p>et supprimer la branche</p>
+	<p>et supprimer la branche</p>
 
-<code>git branch -d feature_x</code>
+		<code>git branch -d feature_x</code>
 
-<p>une branche n'est pas disponible pour les autres tant que vous ne l'aurez pas envoyée vers votre dépôt distant</p>
+	<p>une branche n'est pas disponible pour les autres tant que vous ne l'aurez pas envoyée vers votre dépôt distant</p>
 
-<code>git push origin feature_x</code>
+		<code>git push origin feature_x</code>
 
 <!--Close part4: branches-->
 
 
+<!--Open part5: MAJ & Merge-->
+
+<h2 id="maj">Mettre à jour et fusionner</h2>
+
+	<p>Pour mettre à jour votre dépôt local vers les dernières validations, exécutez la commande</p>
+
+		<code> git pull<code>
+
+	<p>C'est la première étape dans un workflow git basique. Pour valider ces changements, utilisez</p>
+
+		<code>git commit -m "Message de validation"<code>
+
+	<p> dans votre espace de travail pour récupérer et fusionner les changements distants.</p><br />
+
+	<p>Pour fusionner une autre branche avec la branche active (par exemple master), utilisez</p>
+
+		<code>git merge feature_x<code>
+
+	<p>dans les deux cas, git tente d'auto-fusionner les changements. Malheureusement, ça n'est pas toujours possible et résulte par des conflits. Vous devez alors régler ces conflits manuellement en éditant les fichiers indiqués par git. Après l'avoir fait, vous devez les marquer comme fusionnés avec</p>
+
+		<code>git add filename</code>
+
+	<p>après avoir fusionné les changements, vous pouvez en avoir un aperçu en utilisant</p>
+		<code>git diff source_branch target_branch</code>
+
+<!--Close part5: MAJ & Merge-->
+
 
 </div>    <!--close div contenu-->
-</div>    <!--close div contenu-->
+</div>    <!--close div box-->
 
 
 
