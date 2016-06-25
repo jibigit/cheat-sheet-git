@@ -5,40 +5,44 @@
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 300;
-	src: local("Roboto Light"), url("fonts/roboto/roboto-300.woff2") format("woff2");
+	src: local("Roboto Light"), url("roboto-light.woff") format("woff");
 }
 
 @font-face {
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 400;
-	src: local("Roboto Regular"), url("fonts/roboto/roboto-400.woff2") format("woff2");
+	src: local("Roboto Regular"), url("roboto-regular.woff") format("woff");
 }
 
 @font-face {
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 700;
-	src: local("Roboto Bold"), url("fonts/roboto/roboto-700.woff2") format("woff2");
+	src: local("Roboto Bold"), url("roboto-bold.woff") format("woff");
 }
 
 @font-face {
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 900;
-	src: local("Roboto Black"), url("fonts/roboto/roboto-900.woff2") format("woff2");
+	src: local("Roboto Black"), url("roboto-black.woff") format("woff");
 }
 
 
 /*Apply fonts, color on html & body */
 html,
 body {
-	font-family: Roboto, 'Trebuchet MS', arial, helvetica, sans-serif;
+	font-family:'roboto-light''Trebuchet MS', arial, helvetica, sans-serif;
 	font-weight: 400;
 	background-color: #fafafa;
 	color: #212121;
 	padding: 0;
 	margin: 0;
+}
+
+h1{
+	font size: 28px;
 }
 
 /*Body size*/
