@@ -1,39 +1,10 @@
-/* Add fonts*/
 
 
-@font-face {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 300;
-	src: local("Roboto Light"), url("roboto-light.woff") format("woff");
-}
-
-@font-face {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 400;
-	src: local("Roboto Regular"), url("roboto-regular.woff") format("woff");
-}
-
-@font-face {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 700;
-	src: local("Roboto Bold"), url("roboto-bold.woff") format("woff");
-}
-
-@font-face {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 900;
-	src: local("Roboto Black"), url("roboto-black.woff") format("woff");
-}
 
 
-/*Apply fonts, color on html & body */
 html,
 body {
-	font-family:'roboto-light''Trebuchet MS', arial, helvetica, sans-serif;
+	font-family:'Trebuchet MS', arial, helvetica, sans-serif;
 	font-weight: 400;
 	background-color: #fafafa;
 	color: #212121;
@@ -80,8 +51,8 @@ body {
 
 img {
 	vertical-align: middle;
-	height: 120px;
-	width: 320px;
+	height: auto;
+	width: auto;
 }
 
 /* header style */
@@ -89,7 +60,8 @@ img {
 .header {
 	margin: 50px auto 20px;
 	max-width: 1000px;
-	padding: 20px 20px 0;;
+	padding: 20px 20px 0;
+	font-family: 'Quicksand'
 
 }
 
@@ -138,6 +110,7 @@ h6 {
 	margin: 0 auto;
 	max-width: 1000px;
 	padding: 20px;
+	font-family: 'Quicksand'
 }
 
 p {
@@ -196,6 +169,26 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		overflow: hidden;
 		height: 35px;
 		padding-right: 15px;
+	}
+
+	img{
+		width: 50%;
+		height: 50%
+	}
+
+	.contenu .box code {
+		font-size: 70%;
+	}
+
+	@media (max-width: 415px) {
+
+	.contenu .box ul li a code {
+		font-size: 50%;
+	}
+	img {
+		width: 50%;
+		height: 50%;
+	}
 	}
 }
 
